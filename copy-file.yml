@@ -1,0 +1,9 @@
+---
+- name: Copy a file form Controller to nodes
+  hosts: all
+  tasks:
+    - name: Copy file 
+      copy:
+        src: /opt/Real-Time-Ansible-Playbooks/shell-commands.sh
+        dest: /opt
+

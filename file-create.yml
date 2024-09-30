@@ -1,0 +1,10 @@
+---
+- name: File Creation
+  hosts: all
+  tasks:
+    - name: Now File Creating in Remote or Target Servers
+      file:
+        path: /opt/Test_file
+        state: touch
+        
+

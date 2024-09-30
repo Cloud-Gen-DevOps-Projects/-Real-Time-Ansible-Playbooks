@@ -1,0 +1,12 @@
+# ansible all -m shell -a "ls -l /opt"
+---
+- name: List files in a Directory
+  hosts: all
+  tasks:
+    - name: Get list of all files
+      command: ls -l /opt
+      register: file_list
+
+    - debug:
+        var: file_list.stdout_lines
+

@@ -1,0 +1,9 @@
+---
+- name: Creation of Directory in Remote Server
+  hosts: all 
+  tasks:
+    - name: Now Creating a Directory in Remote Servers
+      file:
+        path: /opt/TD-by-Ansible
+        state: directory
+        
